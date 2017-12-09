@@ -30,7 +30,7 @@ int computermove()
 }
 void displaygrid()
 {
-	{
+	
     printf("\n\n");
      
     printf("\t\t\t  %c | %c  | %c  \n", matrix[0][0],
@@ -45,8 +45,8 @@ void displaygrid()
     return;
 }
 
-	}
-}
+	
+
 int checkXorO(char a,char b,char c)
 {
 	if(a=='X')if(b=='X')if(c=='X')return 1;
