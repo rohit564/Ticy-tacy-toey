@@ -30,21 +30,20 @@ int computermove()
 }
 void displaygrid()
 {
-	for(int i=0;i<3;i++)
 	{
-		for (int j = 0; j < 3; ++j)
-		{
-			if(matrix[i][j])
-				printf(" %c |",matrix[i][j] );
-			else
-				printf("   |" );
-		}
-		printf("\n");
-		for (int j = 0; j < 3; ++j)
-		{
-			printf("___|");
-		}
-		printf("\n");
+    printf("\n\n");
+     
+    printf("\t\t\t  %c | %c  | %c  \n", matrix[0][0],
+                             matrix[0][1], matrix[0][2]);
+    printf("\t\t\t--------------\n");
+    printf("\t\t\t  %c | %c  | %c  \n", matrix[1][0],
+                             matrix[1][1], matrix[1][2]);
+    printf("\t\t\t--------------\n");
+    printf("\t\t\t  %c | %c  | %c  \n\n", matrix[2][0],
+                             matrix[2][1], matrix[2][2]);
+  
+    return;
+}
 
 	}
 }
